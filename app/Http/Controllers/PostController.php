@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
 
 class PostController extends Controller
 {
@@ -20,7 +22,7 @@ class PostController extends Controller
 
         return view('pages.posts', [
             'posts' => $post,
-            'title' => 'Berita',
+            'title' => 'Berita Terkini',
         ]);
     }
 

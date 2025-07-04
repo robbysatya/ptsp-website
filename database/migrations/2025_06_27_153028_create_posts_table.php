@@ -18,7 +18,7 @@ return new class extends Migration
             // $table->string('category')->nullable();
             $table->string('slug')->unique();
             $table->string('thumbnail')->nullable();
-            $table->boolean('active')->default(true)->comment('Status Aktif');
+            $table->boolean('status')->default(true)->comment('Status Aktif');
             $table->foreignId('user_id')
                 ->constrained('users');
             $table->dateTime('published_at')->nullable();

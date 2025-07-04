@@ -7,6 +7,7 @@ use App\Filament\Resources\PostResource\RelationManagers;
 use App\Models\Post;
 use Filament\Forms;
 use Filament\Forms\Form;
+
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\Toggle;
@@ -17,9 +18,11 @@ use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Grid;
 use Filament\Forms\Components\Card;
 use Filament\Forms\Components\Section;
+
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
+
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\ImageColumn;
@@ -61,8 +64,10 @@ class PostResource extends Resource
                             ->required()
                             ->columnSpanFull(),
                         DateTimePicker::make('published_at'),
-                        Toggle::make('active')
+                        Toggle::make('status')
                             ->required()
+                            ->onColor('success')
+                            ->offColor('danger'),
                     ])->columnSpan(8),
                 Section::make()
                     ->schema([
@@ -94,7 +99,7 @@ class PostResource extends Resource
                     ->searchable(),
                 TextColumn::make('slug')
                     ->searchable(),
-                IconColumn::make('active')
+                IconColumn::make('status')
                     ->boolean(),
                 TextColumn::make('user.name')
                     ->numeric()

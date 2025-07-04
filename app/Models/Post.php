@@ -16,7 +16,7 @@ class Post extends Model
         'content',
         'slug',
         'thumbnail',
-        'active',
+        'status',
         'user_id',
         'published_at',
     ];
