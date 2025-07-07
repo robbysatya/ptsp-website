@@ -3,7 +3,7 @@
 
       <a href="{{ '/' }}" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo-ptsp.png" alt="Logo PTSP Kota Metro">
+        <img src="{{ asset('assets/img/logo-ptsp.png') }}" alt="Logo PTSP Kota Metro">
       </a>
 
       <nav id="navmenu" class="navmenu">

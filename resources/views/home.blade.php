@@ -272,7 +272,7 @@
                     <h4>{{ $post->title }}</h4>
                     <p>{{ $post->title }}</p>
                     <a href="{{ asset('storage/' . $post->thumbnail) }}" title="{{ $post->title }}" data-description="{{ $post->content }}" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    <a href="{{ route('posts.show', $post) }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                   </div>
                 </div>
               @endforeach

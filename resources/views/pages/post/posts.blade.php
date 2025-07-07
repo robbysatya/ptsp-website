@@ -11,16 +11,10 @@
                         <div class="card-body">
                             <h2 class="card-title">{{ $post->title }}</h2>
                             <p class="card-text">{{ $post->getExcerpt() }}</p>
-                            <a href="{{ route('posts.show', $post->slug) }}" class="btn btn-primary" style="background: var(--accent-color); border: solid 1px var(--accent-color); ">Baca Selengkapnya &rarr;</a>
+                            <a href="{{ route('view', $post->slug) }}" class="btn btn-primary" style="background: var(--accent-color); border: solid 1px var(--accent-color); ">Baca Selengkapnya &rarr;</a>
                         </div>
                         <div class="card-footer text-muted">
                             Diposting pada {{ $post->published_at->format('d M Y') }}
-                            @if ($post->category)
-                                <span class="float-end">    
-                                    <i class="bi bi-folder"></i> 
-                                    <a href="{{ route('posts.category', $post->category->slug) }}">{{ $post->category->name }}</a>
-                                </span>
-                            @endif
                         </div>
                     </div>
                 @endforeach
@@ -40,13 +34,13 @@
                     </div>
                     <div class="card-body">
                         <ul class="list-group">
-                            {{-- @foreach ($categories as $category)
+                            @foreach ($categories as $category)
                                 <li class="list-group-item">
-                                    <a href="{{ route('posts.category', $category->slug) }}">
+                                    <a href="{{ $category->slug }}">
                                         <i class="bi bi-folder"></i> {{ $category->name }}
                                     </a>
                                 </li>
-                            @endforeach --}}
+                            @endforeach
                         </ul>
                     </div>
                 </div>
@@ -58,7 +52,7 @@
                         <ul class="list-group">
                             @foreach ($posts->sortByDesc('views')->take(5) as $popularPost)
                                 <li class="list-group-item">
-                                    <a href="{{ route('posts.show', $popularPost->slug) }}">
+                                    <a href="{{ route('view', $popularPost->slug) }}">
                                         <i class="bi bi-eye"></i> {{ $popularPost->title }} ({{ $popularPost->views }})
                                     </a>
                                 </li>

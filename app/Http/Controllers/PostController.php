@@ -19,13 +19,13 @@ class PostController extends Controller
             ->where('status', '=', 1)
             ->where('published_at', '!=', NULL) 
             ->orderBy('published_at', 'desc')
-            ->paginate(10);
+            ->paginate(5);
 
         $category = Category::query()
             ->orderBy('name', 'asc')
             ->get();
 
-        return view('pages.posts', [
+        return view('pages.post.posts', [
             'posts' => $post,
             'categories' => $category,
             'title' => 'Daftar Berita',
@@ -53,7 +53,20 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        //
+        if (!$post->status || !$post->published_at > now()) {
+            throw new NotFoundHttpException('Post not found or not available.');
+        }
+
+        $category = Category::query()
+            ->orderBy('name', 'asc')
+            ->get();
+        
+        return view('pages.post.view', [
+            'categories' => $category,
+        ], compact('post'))
+            ->with('title', $post->title)
+            ->with('description', Str::limit(strip_tags($post->content), 150))
+            ->with('image', $post->image ? Storage::url($post->image) : null);
     }
 
     /**
