@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
@@ -15,14 +16,19 @@ class PostController extends Controller
     public function index()
     {
         $post = Post::query()
-            ->where('active', '=', 1)
+            ->where('status', '=', 1)
             ->where('published_at', '!=', NULL) 
             ->orderBy('published_at', 'desc')
             ->paginate(10);
 
+        $category = Category::query()
+            ->orderBy('name', 'asc')
+            ->get();
+
         return view('pages.posts', [
             'posts' => $post,
-            'title' => 'Berita Terkini',
+            'categories' => $category,
+            'title' => 'Daftar Berita',
         ]);
     }
 

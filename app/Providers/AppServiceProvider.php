@@ -13,6 +13,7 @@ use Filament\Http\Middleware\AuthenticateSession;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Pagination\Paginator;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -21,18 +22,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->app->bind(
-        \Filament\Auth\Contracts\AuthProvider::class,
-        \App\Providers\FilamentAuthServiceProvider::class
-    );
-        $this->app->bind(
-            \Filament\Auth\Contracts\LoginResponse::class,
-            \App\Providers\FilamentLoginResponse::class
-        );
-        $this->app->bind(
-            \Filament\Auth\Contracts\LogoutResponse::class,
-            \App\Providers\FilamentLogoutResponse::class
-        );
+    
     }
 
     /**
@@ -41,6 +31,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         Blade::withoutDoubleEncoding();
-        Panel::authProvider('user-login', AuthServiceProvider::class);
+        Paginator::useBootstrap();
     }
 }

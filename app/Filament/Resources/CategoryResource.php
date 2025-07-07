@@ -47,6 +47,19 @@ class CategoryResource extends Resource
     public static function table(Table $table): Table
     {
         return $table
+
+            // Empty state configuration
+            ->emptyStateActions([
+                Tables\Actions\CreateAction::make()
+                    ->label('Create Category')
+                    ->icon('heroicon-o-plus')
+                    ->button(),
+            ])
+            ->emptyStateIcon('heroicon-o-rectangle-stack')
+            ->emptyStateHeading('No Categories Found')
+            ->emptyStateDescription('You have not created any categories yet.')
+
+            // Table configuration
             ->columns([
                 TextColumn::make('name')
                     ->searchable(),

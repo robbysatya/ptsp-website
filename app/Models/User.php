@@ -55,4 +55,24 @@ class User extends Authenticatable
     protected $attributes = [
         'status' => true,
     ];
+
+    public function isSuperAdmin(): bool
+    {
+        return $this->role === 'super_admin';
+    }
+
+    public function isAdmin(): bool
+    {
+        return $this->role === 'admin';
+    }
+
+    public function isUser(): bool
+    {
+        return $this->role === 'user';
+    }
+    
+    public function isEditor(): bool
+    {
+        return $this->role === 'editor';    
+    }
 }

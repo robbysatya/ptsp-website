@@ -12,7 +12,7 @@ class HomeController extends Controller
     public function index()
     {
         $post = Post::query()
-            ->where('active', '=', 1)
+            ->where('status', '=', 1)
             ->where('published_at', '!=', NULL) 
             ->orderBy('published_at', 'desc')
             ->paginate(6);

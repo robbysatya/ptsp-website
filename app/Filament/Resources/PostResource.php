@@ -26,6 +26,7 @@ use Filament\Tables\Table;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\ImageColumn;
+use Filament\Tables\Actions\Action;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Illuminate\Support\Str;
@@ -92,6 +93,21 @@ class PostResource extends Resource
     public static function table(Table $table): Table
     {
         return $table
+            // When Table empty, show a custom message and action
+            ->query(Post::query()->with('user'))
+            ->defaultSort('published_at', 'desc')
+            ->emptyStateActions([
+                Action::make('Create Post')
+                    ->label('Create New Post')
+                    ->icon('heroicon-o-plus')
+                    ->url(static::getUrl('create'))
+                    ->color('primary'),
+            ])
+            ->emptyStateHeading('No Posts Found')
+            ->emptyStateDescription('You have not created any posts yet. Click the button below to create your first post.')
+            ->emptyStateIcon('heroicon-o-document-text')
+            
+            // Tabel configuration
             ->columns([
                 ImageColumn::make('thumbnail')
                     ->searchable(),

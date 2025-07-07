@@ -56,6 +56,7 @@ class UserResource extends Resource
                     ->revealable(),
                 Select::make('role')
                     ->label('Role')
+                    ->required()
                     ->options([
                         'super_admin' => 'Super Admin',
                         'admin' => 'Admin',
@@ -92,6 +93,12 @@ class UserResource extends Resource
                         'admin' => 'Admin',
                         'user' => 'User',
                         'editor' => 'Editor',
+                    })
+                    ->color(fn (string $state): string => match ($state) {
+                        'super_admin' => 'primary',
+                        'admin' => 'secondary',
+                        'user' => 'success',
+                        'editor' => 'warning',
                     }),
                 IconColumn::make('status')
                     ->label('Status')

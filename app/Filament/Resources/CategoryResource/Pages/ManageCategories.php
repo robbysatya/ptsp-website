@@ -13,7 +13,10 @@ class ManageCategories extends ManageRecords
     protected function getHeaderActions(): array
     {
         return [
-            Actions\CreateAction::make(),
+            Actions\CreateAction::make()
+                ->label('Create Category')
+                ->icon('heroicon-o-plus')
+                ->button(),
         ];
     }
 }
