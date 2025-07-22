@@ -11,7 +11,7 @@
                         <div class="card-body">
                             <h2 class="card-title">{{ $post->title }}</h2>
                             <p class="card-text">{{ $post->getExcerpt() }}</p>
-                            <a href="{{ route('view', $post->slug) }}" class="btn btn-primary" style="background: var(--accent-color); border: solid 1px var(--accent-color); ">Baca Selengkapnya &rarr;</a>
+                            <a href="{{ 'view' }}" class="btn btn-primary" style="background: var(--accent-color); border: solid 1px var(--accent-color); ">Baca Selengkapnya &rarr;</a>
                         </div>
                         <div class="card-footer text-muted">
                             Diposting pada {{ $post->published_at->format('d M Y') }}
