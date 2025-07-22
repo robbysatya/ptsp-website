@@ -78,8 +78,7 @@
 
         <div class="row gy-4">
           <div class="col-lg-6 position-relative" data-aos="fade-up" data-aos-delay="100">
-            <img src="{{ asset('assets/img/about/cover-kadis-hello.png') }}" class="img-fluid kadis-1 position-absolute top-0 start-0" alt="" style="width: 50%; height: auto; z-index: 2">
-            <img src="{{ asset('assets/img/about/FO1.jpeg') }}" class="img-fluid about-1 opacity-75" alt="" style="top: 0; left: 0; z-index: 1; border-radius: 10px;">
+            <img src="{{ asset('assets/img/about/FO1.jpeg') }}" class="img-fluid about-1" alt="" style="top: 0; left: 0; z-index: 1; border-radius: 10px;">
             {{-- <a href="https://www.youtube.com/watch?v=h0ci067jsDU" class="glightbox pulsating-play-btn"></a> --}}
           </div>
           <div class="col-lg-6 content ps-5" data-aos="fade-up" data-aos-delay="200">
@@ -147,8 +146,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <span>Pelayanan</span>
-        <h2>Pelayanan</h2>
+        <span>Pelayanan Perizinan</span>
+        <h2>Pelayanan Perizinan</h2>
         {{-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> --}}
       </div><!-- End Section Title -->
 
@@ -162,7 +161,7 @@
                 <i class="bi bi-activity"></i>
               </div>
               <a href="service-details.html" class="stretched-link">
-                <h3>Nesciunt Mete</h3>
+                <h3>Perizinan Tenaga Kesehatan</h3>
               </a>
               <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
             </div>
@@ -174,7 +173,7 @@
                 <i class="bi bi-broadcast"></i>
               </div>
               <a href="service-details.html" class="stretched-link">
-                <h3>Eosle Commodi</h3>
+                <h3>Perizinan Berusaha</h3>
               </a>
               <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
             </div>
@@ -186,54 +185,16 @@
                 <i class="bi bi-easel"></i>
               </div>
               <a href="service-details.html" class="stretched-link">
-                <h3>Ledo Markt</h3>
+                <h3>Perizinan Non Berusaha</h3>
               </a>
               <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
             </div>
           </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
-              </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Asperiores Commodit</h3>
-              </a>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="service-details.html" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar4-week"></i>
-              </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Velit Doloremque</h3>
-              </a>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <a href="service-details.html" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
-              </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Dolori Architecto</h3>
-              </a>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="service-details.html" class="stretched-link"></a>
-            </div>
+          
+          {{-- Button Layanan --}}
+          <div class="d-flex col-md-12 justify-content-center text-center">
+              <a href="#about" class="mt-4 btn-get-started" style="color: var(--contrast-color);background: var(--accent-color);border: 0;padding: 10px 30px;transition: 0.4s;border-radius: 50px;">Lihat Selengkapnya</a>
           </div>
-          <div class="col-12 text-start mt-5 d-flex justify-content-center">
-                <a href="#services" class="btn-get" style="color: var(--contrast-color);background: var(--accent-color);border: 0;padding: 10px 30px;transition: 0.4s;border-radius: 50px;">Lihat Selengkapnya</a>
-          </div>
-          <!-- End Service Item -->
 
         </div>
 
@@ -272,7 +233,7 @@
                     <h4>{{ $post->title }}</h4>
                     <p>{{ $post->title }}</p>
                     <a href="{{ asset('storage/' . $post->thumbnail) }}" title="{{ $post->title }}" data-description="{{ $post->content }}" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="{{ route('view', $post->slug) }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    <a href="{{ route('posts.show', $post) }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                   </div>
                 </div>
               @endforeach
