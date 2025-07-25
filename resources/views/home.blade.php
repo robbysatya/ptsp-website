@@ -36,28 +36,28 @@
 
           <div class="col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-activity icon"></i></div>
-              <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
+              <div class="icon"><i class="bi bi-file-earmark-lock icon"></i></div>
+              <h4><a href="" class="stretched-link">Aman</a></h4>
               <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-              <h4><a href="" class="stretched-link">Sed ut perspici</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
               <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
-              <h4><a href="" class="stretched-link">Magni Dolores</a></h4>
+              <h4><a href="" class="stretched-link">Cepat</a></h4>
               <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
             </div>
           </div><!-- End Service Item -->
 
+          <div class="col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
+              <h4><a href="" class="stretched-link">Transparan</a></h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div><!-- End Service Item -->
+          
         </div>
 
       </div>
@@ -203,7 +203,7 @@
     </section><!-- /Services Section -->
 
     <!-- Berita Section -->
-    <section id="berita" class="portfolio section">
+    <section id="berita" class="portfolio section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -233,7 +233,7 @@
                     <h4>{{ $post->title }}</h4>
                     <p>{{ $post->title }}</p>
                     <a href="{{ asset('storage/' . $post->thumbnail) }}" title="{{ $post->title }}" data-description="{{ $post->content }}" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="{{ route('posts.show', $post) }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    <a href="{{ route('view', $post) }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                   </div>
                 </div>
               @endforeach
@@ -242,22 +242,24 @@
           </div><!-- End Portfolio Container -->
 
         </div>
-
+        {{-- Button Berita --}}
+        <div class="col-12 text-center mt-4">
+          <a href="#about" class="btn-get-started" style="color: var(--contrast-color);background: var(--accent-color);border: 0;padding: 10px 30px;transition: 0.4s;border-radius: 50px;">Lihat Selengkapnya</a>
+        </div>
       </div>
-
     </section><!-- /Portfolio Section -->
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section light-background">
+    {{-- <section id="testimonials" class="testimonials section light-background"> --}}
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      {{-- <div class="container section-title" data-aos="fade-up">
         <span>Testimonials</span>
         <h2>Testimonials</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+      </div><!-- End Section Title --> --}}
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      {{-- <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="swiper init-swiper" data-speed="600" data-delay="5000" data-breakpoints="{ &quot;320&quot;: { &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 40 }, &quot;1200&quot;: { &quot;slidesPerView&quot;: 3, &quot;spaceBetween&quot;: 40 } }">
           <script type="application/json" class="swiper-config">
@@ -298,9 +300,9 @@
                 <h3>Saul Goodman</h3>
                 <h4>Ceo &amp; Founder</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div><!-- End testimonial item --> --}}
 
-            <div class="swiper-slide">
+            {{-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
@@ -311,9 +313,9 @@
                 <h3>Sara Wilsson</h3>
                 <h4>Designer</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div><!-- End testimonial item --> --}}
 
-            <div class="swiper-slide">
+            {{-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
@@ -324,9 +326,9 @@
                 <h3>Jena Karlis</h3>
                 <h4>Store Owner</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div><!-- End testimonial item --> --}}
 
-            <div class="swiper-slide">
+            {{-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
@@ -337,9 +339,9 @@
                 <h3>Matt Brandon</h3>
                 <h4>Freelancer</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div><!-- End testimonial item --> --}}
 
-            <div class="swiper-slide">
+            {{-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
@@ -358,18 +360,18 @@
 
       </div>
 
-    </section><!-- /Testimonials Section -->
+    </section><!-- /Testimonials Section --> --}}
 
-    <!-- Call To Action Section -->
+    <!-- Konsultasi Whatsapp -->
     <section id="call-to-action" class="call-to-action section accent-background">
 
       <div class="container">
         <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-10">
             <div class="text-center">
-              <h3>Call To Action</h3>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <a class="cta-btn" href="#">Call To Action</a>
+              <h3>Konsultasi Online</h3>
+              <p>Untuk informasi dan konsultasi, hubungi kami melalui kontak <b>Whatsapp</b> resmi kami dibawah ini.</p>
+              <a class="cta-btn" href="#"><i class="bi bi-whatsapp"></i> Hubungi Kami</a>
             </div>
           </div>
         </div>
@@ -377,32 +379,30 @@
 
     </section><!-- /Call To Action Section -->
 
-    <!-- Team Section -->
+    <!-- Struktur Organisasi -->
     <section id="team" class="team section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <span>Section Title</span>
-        <h2>Team</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <span>Struktur Organisasi</span>
+        <h2>Struktur Organisasi</h2>
       </div><!-- End Section Title -->
 
       <div class="container">
 
-        <div class="row gy-5">
+        <div class="row gy-5 d-flex justify-content-center">
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
               <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <div class="social">
+                <h4>Ismet, S.E</h4>
+                <span>Kepala Dinas PTSP Kota Metro</span>
+                {{-- <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                </div> --}}
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -411,39 +411,25 @@
             <div class="member">
               <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-                <div class="social">
+                <h4>Kori Aulina, S.IP</h4>
+                <span>Sekretaris Dinas PTSP Kota Metro</span>
+                {{-- <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                </div> --}}
               </div>
             </div>
           </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
         </div>
-
+        {{-- Button Struktur Organisasi --}}
+         <div class="col-12 text-center mt-4">
+           <a href="#about" class="btn-get-started" style="color: var(--contrast-color);background: var(--accent-color);border: 0;padding: 10px 30px;transition: 0.4s;border-radius: 50px;">Lihat Selengkapnya</a>
+         </div>
       </div>
-
-    </section><!-- /Team Section -->
+    </section>
+    <!-- /Team Section -->
 
     <!-- Contact Pengaduan Section -->
     <section id="pengaduan" class="contact section">
