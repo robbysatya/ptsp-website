@@ -49,6 +49,14 @@
   --contrast-color: #ffffff;
 }
 
+.gray-background {
+  --background-color: #f0f0f0;
+  --default-color: #444444;
+  --heading-color: #5f687b;
+  --surface-color: #ffffff;
+  --contrast-color: #ffffff;
+}
+
 /* Smooth scroll */
 :root {
   scroll-behavior: smooth;
@@ -1098,7 +1106,7 @@ section,
 
 .stats .stats-item span {
   font-size: 48px;
-  display: block;
+  /* display: block; */
   color: var(--accent-color);
   font-weight: 700;
 }
