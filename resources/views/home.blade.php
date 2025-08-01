@@ -27,43 +27,6 @@
 
     </section><!-- /Hero Section -->
 
-    <!-- Featured Services Section -->
-    {{-- <section id="featured-services" class="featured-services section">
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item">
-              <div class="icon text-center"><i class="bi bi-file-earmark-lock icon"></i></div>
-              <h4><a href="" class="stretched-link">Aman</a></h4> --}}
-              {{-- <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p> --}}
-            {{-- </div>
-          </div><!-- End Service Item --> --}}
-
-          {{-- <div class="col-lg-4 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item">
-              <div class="icon text-center"><i class="bi bi-calendar4-week icon"></i></div>
-              <h4><a href="" class="stretched-link">Cepat</a></h4> --}}
-              {{-- <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p> --}}
-            {{-- </div>
-          </div><!-- End Service Item --> --}}
-
-          {{-- <div class="col-lg-4 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item">
-              <div class="icon text-center"><i class="bi bi-bounding-box-circles icon"></i></div>
-              <h4><a href="" class="stretched-link">Transparan</a></h4> --}}
-              {{-- <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p> --}}
-            {{-- </div>
-          </div><!-- End Service Item --> --}}
-          
-        {{-- </div>
-
-      </div>
-
-    </section><!-- /Featured Services Section --> --}}
-
     <!-- About Section -->
     <section id="about" class="about section">
 
@@ -84,8 +47,8 @@
           <div class="col-lg-6 content ps-5" data-aos="fade-up" data-aos-delay="200">
             <h3>Tugas DPMPTSP Kota Metro</h3>
             <p class="text-justify">
-              Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu Kota Metro mempunyai tugas merumuskan dan 
-              melaksanakan kebijakan di bidang penanaman modal serta penyelenggaraan pelayanan administrasi penanaman modal, perizinan dan non perizinan secara terpadu 
+              Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu Kota Metro mempunyai tugas merumuskan dan
+              melaksanakan kebijakan di bidang penanaman modal serta penyelenggaraan pelayanan administrasi penanaman modal, perizinan dan non perizinan secara terpadu
               dengan prinsip :
             </p>
             <ul class="d-flex flex-wrap justify-content-between">
@@ -165,7 +128,7 @@
               <a href="service-details.html" class="stretched-link">
                 <h3>Perizinan Tenaga Kesehatan</h3>
               </a>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+              <p>Perizinan terkait Tenaga Kesehatan untuk pembuatan Surat Izin Praktik (SIP) dan Pencabutan SIP.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -177,7 +140,7 @@
               <a href="service-details.html" class="stretched-link">
                 <h3>Perizinan Berusaha</h3>
               </a>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+              <p>Perizinan terkait pembuatan usaha melalui OSS Berusaha dan Izin terkait Usaha lainnya.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -189,10 +152,10 @@
               <a href="service-details.html" class="stretched-link">
                 <h3>Perizinan Non Berusaha</h3>
               </a>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              <p>Perizinan terkait izin individu ataupun perorangan.</p>
             </div>
           </div><!-- End Service Item -->
-          
+
           {{-- Button Layanan --}}
           <div class="d-flex col-md-12 justify-content-center text-center">
               <a href="#about" class="mt-4 btn-get-started" style="color: var(--contrast-color);background: var(--accent-color);border: 0;padding: 10px 30px;transition: 0.4s;border-radius: 50px;">Lihat Selengkapnya</a>
@@ -218,14 +181,6 @@
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-            {{-- <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-product">Product</li>
-              <li data-filter=".filter-branding">Branding</li>
-              <li data-filter=".filter-books">Books</li>
-            </ul><!-- End Portfolio Filters --> --}}
-
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             @foreach ($posts as $post)
@@ -250,119 +205,6 @@
         </div>
       </div>
     </section><!-- /Portfolio Section -->
-
-    <!-- Testimonials Section -->
-    {{-- <section id="testimonials" class="testimonials section light-background"> --}}
-
-      <!-- Section Title -->
-      {{-- <div class="container section-title" data-aos="fade-up">
-        <span>Testimonials</span>
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title --> --}}
-
-      {{-- <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper" data-speed="600" data-delay="5000" data-breakpoints="{ &quot;320&quot;: { &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 40 }, &quot;1200&quot;: { &quot;slidesPerView&quot;: 3, &quot;spaceBetween&quot;: 40 } }">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 20
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-            <p>
-              <i class=" bi bi-quote quote-icon-left"></i>
-                <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-              </div>
-            </div><!-- End testimonial item --> --}}
-
-            {{-- <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-              </div>
-            </div><!-- End testimonial item --> --}}
-
-            {{-- <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div><!-- End testimonial item --> --}}
-
-            {{-- <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div><!-- End testimonial item --> --}}
-
-            {{-- <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Testimonials Section --> --}}
 
     <!-- Konsultasi Whatsapp -->
     <section id="call-to-action" class="call-to-action section accent-background">
@@ -399,12 +241,6 @@
               <div class="member-info">
                 <h4>Ismet, S.E</h4>
                 <span>Kepala Dinas PTSP Kota Metro</span>
-                {{-- <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div> --}}
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -415,12 +251,6 @@
               <div class="member-info">
                 <h4>Kori Aulina, S.IP</h4>
                 <span>Sekretaris Dinas PTSP Kota Metro</span>
-                {{-- <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div> --}}
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -440,7 +270,6 @@
       <div class="container section-title" data-aos="fade-up">
         <span>Alamat & Pengaduan</span>
         <h2>Alamat & Pengaduan</h2>
-        {{-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> --}}
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">

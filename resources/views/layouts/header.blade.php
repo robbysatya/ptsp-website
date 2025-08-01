@@ -9,7 +9,7 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="{{ '/' }}">Beranda</a></li>
-          
+
           <li class="dropdown"><a href="#about"><span>Tentang Kami</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Profil Organisasi</a></li>
@@ -20,10 +20,10 @@
             </ul>
           </li>
 
-          <li class="dropdown"><a href="#services"><span>Pelayanan Perizinan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href=""><span>Pelayanan Perizinan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Perizinan Online</a></li>
-              <li><a href="#">Informasi KBLI</a></li>
+              <li><a href="{{ route('perizinan-online') }}">Perizinan Online</a></li>
+              <li><a href="https://oss.go.id/informasi/kbli-berbasis-risiko" target="_blank">Informasi KBLI</a></li>
               <li><a href="#">Layanan Perbantuan </a></li>
               <li><a href="#">FAQ </a></li>
               <li class="dropdown"><a href="#"><span>Informasi Perizinan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -45,7 +45,7 @@
               <li><a href="#">Promosi Investasi</a></li>
             </ul>
           </li>
-                  
+
           <li class="dropdown"><a href="#pengaduan"><span>Pengaduan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Pengaduan Online</a></li>
@@ -54,7 +54,7 @@
               <li><a href="#">SOP Penanganan Pengaduan</a></li>
             </ul>
           </li>
-          
+
           <li class="dropdown"><a href="#berita"><span>Berita & Gallery</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="{{ '/posts' }}">Berita</a></li>
