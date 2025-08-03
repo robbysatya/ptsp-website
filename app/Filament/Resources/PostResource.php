@@ -106,15 +106,15 @@ class PostResource extends Resource
             ->emptyStateHeading('No Posts Found')
             ->emptyStateDescription('You have not created any posts yet. Click the button below to create your first post.')
             ->emptyStateIcon('heroicon-o-document-text')
-            
+
             // Tabel configuration
             ->columns([
                 ImageColumn::make('thumbnail')
                     ->searchable(),
                 TextColumn::make('title')
                     ->searchable(),
-                TextColumn::make('slug')
-                    ->searchable(),
+//                TextColumn::make('slug')
+//                    ->searchable(),
                 IconColumn::make('status')
                     ->boolean(),
                 TextColumn::make('user.name')
