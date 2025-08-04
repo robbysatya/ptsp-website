@@ -20,7 +20,7 @@
             </ul>
           </li>
 
-          <li class="dropdown"><a href=""><span>Pelayanan Perizinan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#services"><span>Pelayanan Perizinan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="{{ route('perizinan-online') }}">Perizinan Online</a></li>
               <li><a href="https://oss.go.id/informasi/kbli-berbasis-risiko" target="_blank">Informasi KBLI</a></li>

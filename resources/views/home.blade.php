@@ -125,7 +125,7 @@
               <div class="icon">
                 <i class="bi bi-activity"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="" class="stretched-link">
                 <h3>Perizinan Tenaga Kesehatan</h3>
               </a>
               <p>Perizinan terkait Tenaga Kesehatan untuk pembuatan Surat Izin Praktik (SIP) dan Pencabutan SIP.</p>
@@ -137,7 +137,7 @@
               <div class="icon">
                 <i class="bi bi-broadcast"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="" class="stretched-link">
                 <h3>Perizinan Berusaha</h3>
               </a>
               <p>Perizinan terkait pembuatan usaha melalui OSS Berusaha dan Izin terkait Usaha lainnya.</p>
@@ -149,7 +149,7 @@
               <div class="icon">
                 <i class="bi bi-easel"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="" class="stretched-link">
                 <h3>Perizinan Non Berusaha</h3>
               </a>
               <p>Perizinan terkait izin individu ataupun perorangan.</p>
@@ -157,9 +157,9 @@
           </div><!-- End Service Item -->
 
           {{-- Button Layanan --}}
-          <div class="d-flex col-md-12 justify-content-center text-center">
-              <a href="#about" class="mt-4 btn-get-started" style="color: var(--contrast-color);background: var(--accent-color);border: 0;padding: 10px 30px;transition: 0.4s;border-radius: 50px;">Lihat Selengkapnya</a>
-          </div>
+{{--          <div class="d-flex col-md-12 justify-content-center text-center">--}}
+{{--              <a href="#about" class="mt-4 btn-get-started" style="color: var(--contrast-color);background: var(--accent-color);border: 0;padding: 10px 30px;transition: 0.4s;border-radius: 50px;">Lihat Selengkapnya</a>--}}
+{{--          </div>--}}
 
         </div>
 
