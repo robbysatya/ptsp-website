@@ -12,11 +12,11 @@
 
           <li class="dropdown"><a href="#about"><span>Tentang Kami</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Profil Organisasi</a></li>
-              <li><a href="#">Visi dan Misi</a></li>
-              <li><a href="#">Tugas Pokok dan Fungsi</a></li>
-              <li><a href="#">Struktur Organisasi</a></li>
-              <li><a href="#">Perencanaan dan Pelaporan</a></li>
+              <li><a href="{{ route('profil-organisasi') }}">Profil Organisasi</a></li>
+              <li><a href="{{ route('visi-misi') }}">Visi dan Misi</a></li>
+              <li><a href="{{ route('tugas-pokok') }}">Tugas Pokok dan Fungsi</a></li>
+              <li><a href="{{ route('struktur-organisasi') }}">Struktur Organisasi</a></li>
+              <li><a href="{{ route('perencanaan-pelaporan') }}">Perencanaan dan Pelaporan</a></li>
             </ul>
           </li>
 

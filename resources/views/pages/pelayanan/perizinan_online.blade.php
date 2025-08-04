@@ -4,11 +4,11 @@
 
 {{-- Header --}}
 @include('layouts.header')
-<main class="main">
-            <section id="services" class="services section">
+    <main class="main">
+            <section id="services" class="services section light-background">
             <div class="container section-title" data-aos="fade-up">
-                <span>Perizinan Online</span>
-                <h2>Perizinan Online</h2>
+                <span>{{ $title }}</span>
+                <h2>{{ $title }}</h2>
             </div><!-- End Section Title -->
 
             <div class="container">

@@ -7,6 +7,7 @@ use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class PostController extends Controller
 {
@@ -17,7 +18,7 @@ class PostController extends Controller
     {
         $post = Post::query()
             ->where('status', '=', 1)
-            ->where('published_at', '!=', NULL) 
+            ->where('published_at', '!=', NULL)
             ->orderBy('published_at', 'desc')
             ->paginate(5);
 
@@ -60,7 +61,7 @@ class PostController extends Controller
         $category = Category::query()
             ->orderBy('name', 'asc')
             ->get();
-        
+
         return view('pages.post.view', [
             'categories' => $category,
         ], compact('post'))

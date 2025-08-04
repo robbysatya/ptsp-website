@@ -28,7 +28,7 @@
     </section><!-- /Hero Section -->
 
     <!-- About Section -->
-    <section id="about" class="about section">
+    <section id="about" class="about section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -201,7 +201,7 @@
         </div>
         {{-- Button Berita --}}
         <div class="col-12 text-center mt-4">
-          <a href="#about" class="btn-get-started" style="color: var(--contrast-color);background: var(--accent-color);border: 0;padding: 10px 30px;transition: 0.4s;border-radius: 50px;">Lihat Selengkapnya</a>
+          <a href="{{ route('posts') }}" class="btn-get-started" style="color: var(--contrast-color);background: var(--accent-color);border: 0;padding: 10px 30px;transition: 0.4s;border-radius: 50px;">Lihat Selengkapnya</a>
         </div>
       </div>
     </section><!-- /Portfolio Section -->
@@ -224,7 +224,7 @@
     </section><!-- /Call To Action Section -->
 
     <!-- Struktur Organisasi -->
-    <section id="team" class="team section">
+    <section id="team" class="team section light-background">
 
       <div class="container section-title" data-aos="fade-up">
         <span>Struktur Organisasi</span>
@@ -257,7 +257,7 @@
         </div>
         {{-- Button Struktur Organisasi --}}
          <div class="col-12 text-center mt-4">
-           <a href="#about" class="btn-get-started" style="color: var(--contrast-color);background: var(--accent-color);border: 0;padding: 10px 30px;transition: 0.4s;border-radius: 50px;">Lihat Selengkapnya</a>
+           <a href="{{ route('struktur-organisasi') }}" class="btn-get-started" style="color: var(--contrast-color);background: var(--accent-color);border: 0;padding: 10px 30px;transition: 0.4s;border-radius: 50px;">Lihat Selengkapnya</a>
          </div>
       </div>
     </section>

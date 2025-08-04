@@ -2,7 +2,16 @@
 @include('layouts.header')
 
     <div class="container">
-        <h1 class="mt-4 mb-3">{{ $title }}</h1>
+        {{-- Title Page --}}
+        <section id="services" class="services section light-background">
+            <div class="container section-title" data-aos="fade-up">
+                <span>{{ $title }}</span>
+                <h2>{{ $title }}</h2>
+            </div><!-- End Section Title -->
+        </section>
+
+{{--        <h1 class="mt-4 mb-3">{{ $title }}</h1>--}}
+
         <div class="row">
             <div class="col-md-8">
                 @foreach ($posts as $post)
@@ -11,7 +20,7 @@
                         <div class="card-body">
                             <h2 class="card-title">{{ $post->title }}</h2>
                             <p class="card-text">{{ $post->getExcerpt() }}</p>
-                            <a href="{{ 'view' }}" class="btn btn-primary" style="background: var(--accent-color); border: solid 1px var(--accent-color); ">Baca Selengkapnya &rarr;</a>
+                            <a href="{{ route('view', $post->slug) }}" class="btn btn-primary" style="background: var(--accent-color); border: solid 1px var(--accent-color); ">Baca Selengkapnya &rarr;</a>
                         </div>
                         <div class="card-footer text-muted">
                             Diposting pada {{ $post->published_at->format('d M Y') }}
@@ -46,8 +55,8 @@
                 </div>
                 <div class="card mb-4">
                     <div class="card-header">
-                        <h4 class="card-title  ">Berita Populer</h4>
-                    </div>      
+                        <h4 class="card-title">Berita Populer</h4>
+                    </div>
                     <div class="card-body">
                         <ul class="list-group">
                             @foreach ($posts->sortByDesc('views')->take(5) as $popularPost)
@@ -78,7 +87,7 @@
                         <img src="{{ asset('storage/' . $post->thumbnail) }}" alt="image_post" class="rounded mb-4" style="object-fit: contain; width: 100%">
                         <h2 class="text-xl font-semibold mb-2">{{ $post->title }}</h2>
                         <p class="text-gray-500 mb-2">
-                            <i class="fas fa-calendar-alt"></i> {{  $post->getFormattedDate() }} 
+                            <i class="fas fa-calendar-alt"></i> {{  $post->getFormattedDate() }}
                         </p>
                         <p class="text-gray-700 mb-4" >{!! Str::limit($post->content, 150) !!}</p>
                         <a href="{{ route('posts.show', $post->id) }}" class="text-blue-500 btn-getstarted hover:underline">Baca Selengkapnya  </a>
@@ -86,8 +95,8 @@
                 </div>
             @endforeach
 
-          
-            
+
+
             @if ($posts->hasPages())
             <nav class="pagination">
                 <nav role="navigation" aria-label="Pagination Navigation" class="flex items-center justify-between">
