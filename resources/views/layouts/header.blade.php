@@ -24,8 +24,8 @@
             <ul>
               <li><a href="{{ route('perizinan-online') }}">Perizinan Online</a></li>
               <li><a href="https://oss.go.id/informasi/kbli-berbasis-risiko" target="_blank">Informasi KBLI</a></li>
-              <li><a href="#">Layanan Perbantuan </a></li>
-              <li><a href="#">FAQ </a></li>
+              <li><a href="{{ route('layanan-perbantuan') }}">Layanan Perbantuan </a></li>
+              <li><a href="{{ route('faq') }}">FAQ </a></li>
               <li class="dropdown"><a href="#"><span>Informasi Perizinan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="#">Standar Pelayanan</a></li>
@@ -48,10 +48,10 @@
 
           <li class="dropdown"><a href="#pengaduan"><span>Pengaduan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Pengaduan Online</a></li>
-              <li><a href="#">Whistleblowing</a></li>
-              <li><a href="#">Standar Pelayanan Pengaduan</a></li>
-              <li><a href="#">SOP Penanganan Pengaduan</a></li>
+              <li><a href="{{ route('pengaduan-online') }}">Pengaduan Online</a></li>
+              <li><a href="{{ route('whistleblowing') }}">Whistleblowing</a></li>
+              <li><a href="{{ route('standar-pengaduan') }}">Standar Pelayanan Pengaduan</a></li>
+              <li><a href="{{ route('sop-penanganan-pengaduan') }}">SOP Penanganan Pengaduan</a></li>
             </ul>
           </li>
 

@@ -264,7 +264,7 @@
     <!-- /Team Section -->
 
     <!-- Contact Pengaduan Section -->
-    <section id="pengaduan" class="contact section">
+    <section id="pengaduan" class="contact section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -311,17 +311,23 @@
             <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
 
-                <div class="col-md-6">
+                <div class="col-md-4">
                   <label for="name-field" class="pb-2">Nama Anda</label>
                   <input type="text" name="name" id="name-field" class="form-control" required="">
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-4">
                   <label for="email-field" class="pb-2">Email Anda</label>
                   <input type="email" class="form-control" name="email" id="email-field" required="">
                 </div>
 
-                <div class="col-md-12">
+                <div class="col-md-4">
+                   <label for="number-field" class="pb-2">Nomor Telepon</label>
+                   <label for="phone-field"></label><input type="text" class="form-control" name="phone" id="phone-field" required="">
+                </div>
+
+
+                  <div class="col-md-12">
                   <label for="subject-field" class="pb-2">Subjek</label>
                   <input type="text" class="form-control" name="subject" id="subject-field" required="">
                 </div>

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Perizinan;
 use Illuminate\Http\Request;
 
-class PerizinanController extends Controller
+class PelayananController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -21,6 +21,20 @@ class PerizinanController extends Controller
     {
         return view('pages.pelayanan.perizinan_online', [
             'title' => 'Perizinan Online',
+        ]);
+    }
+
+    public function layanan_perbantuan()
+    {
+        return view('pages.pelayanan.layanan_perbantuan', [
+            'title' => 'Layanan Perbantuan',
+        ]);
+    }
+
+    public function faq()
+    {
+        return view('pages.pelayanan.FAQ', [
+            'title' => 'FAQ',
         ]);
     }
 
