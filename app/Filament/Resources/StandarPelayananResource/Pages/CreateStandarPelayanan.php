@@ -9,4 +9,5 @@ use Filament\Resources\Pages\CreateRecord;
 class CreateStandarPelayanan extends CreateRecord
 {
     protected static string $resource = StandarPelayananResource::class;
+
 }

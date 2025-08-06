@@ -17,7 +17,7 @@ class SOPResource extends Resource
 {
     protected static ?string $model = SOP::class;
 
-    protected static ?string $navigationGroup = 'Perizinan Management';
+    protected static ?string $navigationGroup = 'Data Perizinan Management';
 
     protected static ?string $navigationLabel = 'Standar Operasional (SOP)';
 

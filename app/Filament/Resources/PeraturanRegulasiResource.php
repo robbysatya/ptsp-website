@@ -10,6 +10,7 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
+use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
@@ -17,7 +18,7 @@ class PeraturanRegulasiResource extends Resource
 {
     protected static ?string $model = PeraturanRegulasi::class;
 
-    protected static ?string $navigationGroup = 'Perizinan Management';
+    protected static ?string $navigationGroup = 'Data Perizinan Management';
 
     protected static ?string $navigationLabel = 'Peraturan dan Regulasi';
 
@@ -27,7 +28,7 @@ class PeraturanRegulasiResource extends Resource
     {
         return $form
             ->schema([
-                //
+
             ]);
     }
 

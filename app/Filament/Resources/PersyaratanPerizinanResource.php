@@ -17,7 +17,7 @@ class PersyaratanPerizinanResource extends Resource
 {
     protected static ?string $model = PersyaratanPerizinan::class;
 
-    protected static ?string $navigationGroup = 'Perizinan Management';
+    protected static ?string $navigationGroup = 'Data Perizinan Management';
 
     protected static ?string $navigationLabel = 'Persyaratan dan Perizinan';
 
