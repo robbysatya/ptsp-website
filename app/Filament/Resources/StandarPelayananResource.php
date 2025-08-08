@@ -64,7 +64,7 @@ class StandarPelayananResource extends Resource
         return $table
             // When Table empty, show a custom message and action
 //            ->query(StandarPelayanan::query()->with('standar_palayanans'))
-            ->defaultSort('created_at', 'desc')
+            ->defaultSort('id', 'desc')
             ->emptyStateActions([
                 Action::make('Add Data')
                     ->label('Add New Data')
