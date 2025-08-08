@@ -13,6 +13,10 @@ Route::get('/perizinan-online', [App\Http\Controllers\PelayananController::class
 Route::get('/layanan-perbantuan', [App\Http\Controllers\PelayananController::class, 'layanan_perbantuan'])->name('layanan-perbantuan');
 Route::get('/faq', [App\Http\Controllers\PelayananController::class, 'faq'])->name('faq');
 
+//Page Informasi Perizinan
+Route::get('/informasi-perizinan/standar-pelayanan', [App\Http\Controllers\PelayananController::class, 'standar_pelayanan'])->name('standar-pelayanan');
+Route::get('/informasi-perizinan/standar-operasional', [App\Http\Controllers\PelayananController::class, 'sop'])->name('standar-operasional');
+
 //Page Pengaduan
 Route::get('/pengaduan-online', [App\Http\Controllers\PengaduanController::class, 'pengaduan_online'])->name('pengaduan-online');
 Route::get('/whistleblowing', [App\Http\Controllers\PengaduanController::class, 'whistleblowing'])->name('whistleblowing');

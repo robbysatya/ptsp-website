@@ -97,3 +97,6 @@
 
   <!-- Main JS File -->
   <script src="{{ asset('assets/js/main.js') }}"></script>
+
+  {{-- Data Tables --}}
+  <script src="https://cdn.datatables.net/2.3.2/js/dataTables.js"></script>

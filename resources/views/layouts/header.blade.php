@@ -28,8 +28,8 @@
               <li><a href="{{ route('faq') }}">FAQ </a></li>
               <li class="dropdown"><a href="#"><span>Informasi Perizinan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="#">Standar Pelayanan</a></li>
-                  <li><a href="#">Standar Operasial Pelayanan</a></li>
+                  <li><a href="{{ route('standar-pelayanan') }}">Standar Pelayanan</a></li>
+                  <li><a href="{{ route('standar-operasional') }}">Standar Operasial Pelayanan</a></li>
                   <li><a href="#">Persyaratan Perizinan dan Non Perizinan</a></li>
                   <li><a href="#">Indeks Kepuasan Masyarakat (IKM) </a></li>
                   <li><a href="#">Peraturan dan Regulasi </a></li>

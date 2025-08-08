@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Perizinan;
+use App\Models\Sop;
+use App\Models\StandarPelayanan;
 use Illuminate\Http\Request;
 
 class PelayananController extends Controller
@@ -35,6 +37,31 @@ class PelayananController extends Controller
     {
         return view('pages.pelayanan.FAQ', [
             'title' => 'FAQ',
+        ]);
+    }
+
+//    Menu Informasi Perizinan
+    public function standar_pelayanan()
+    {
+        $standar_pelayanan = StandarPelayanan::query()
+            ->orderBy('id', 'desc')
+            ->paginate(5);
+
+        return view('pages.pelayanan.informasi perizinan.standar_pelayanan', [
+            'title' => 'Standar Pelayanan',
+            'standar_pelayanan' => $standar_pelayanan
+        ]);
+    }
+
+    public function sop()
+    {
+        $sop = Sop::query()
+            ->orderBy('id', 'desc')
+            ->paginate(5);
+
+        return view('pages.pelayanan.informasi perizinan.standar_operasional_pelayanan', [
+            'title' => 'Standar Operasional',
+            'standar_operasional' => $sop
         ]);
     }
 
