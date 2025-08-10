@@ -45,7 +45,7 @@ class PelayananController extends Controller
     {
         $standar_pelayanan = StandarPelayanan::query()
             ->orderBy('id', 'desc')
-            ->paginate(5);
+            ->paginate(10);
 
         return view('pages.pelayanan.informasi perizinan.standar_pelayanan', [
             'title' => 'Standar Pelayanan',

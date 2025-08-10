@@ -2,26 +2,23 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\SOPResource\Pages;
-use App\Filament\Resources\SOPResource\RelationManagers;
-use App\Models\SOP;
+use App\Filament\Resources\StandarOperasionalResource\Pages;
+use App\Filament\Resources\StandarOperasionalResource\RelationManagers;
+use App\Models\Sop;
 use Filament\Forms;
-
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
-
 use Filament\Tables;
 use Filament\Tables\Actions\Action;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
-
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class SOPResource extends Resource
+class StandarOperasionalResource extends Resource
 {
     protected static ?string $model = SOP::class;
 
@@ -101,9 +98,10 @@ class SOPResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListSOPS::route('/'),
-            'create' => Pages\CreateSOP::route('/create'),
-            'edit' => Pages\EditSOP::route('/{record}/edit'),
+            'index' => Pages\ListStandarOperasionals::route('/'),
+            'create' => Pages\CreateStandarOperasional::route('/create'),
+            'view' => Pages\ViewStandarOperasional::route('/{record}'),
+            'edit' => Pages\EditStandarOperasional::route('/{record}/edit'),
         ];
     }
 }

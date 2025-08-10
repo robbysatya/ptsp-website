@@ -100,3 +100,12 @@
 
   {{-- Data Tables --}}
   <script src="https://cdn.datatables.net/2.3.2/js/dataTables.js"></script>
+
+  <script type="text/javascript">
+      $(function () {
+          var table = $('#myTable').DataTable({
+              processing: true,
+              serverSide: true,
+          });
+      });
+  </script>

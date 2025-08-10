@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\SOPResource\Pages;
+namespace App\Filament\Resources\StandarOperasionalResource\Pages;
 
-use App\Filament\Resources\SOPResource;
+use App\Filament\Resources\StandarOperasionalResource;
 use Filament\Actions;
 use Filament\Resources\Pages\CreateRecord;
 
-class CreateSOP extends CreateRecord
+class CreateStandarOperasional extends CreateRecord
 {
-    protected static string $resource = SOPResource::class;
+    protected static string $resource = StandarOperasionalResource::class;
 
     protected ?string $heading = 'Add Data SOP';
 //    protected ?string $title = 'Add Data (SOP)';
