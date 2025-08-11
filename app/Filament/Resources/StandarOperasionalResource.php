@@ -42,7 +42,8 @@ class StandarOperasionalResource extends Resource
                             ->maxLength(255),
                         FileUpload::make('file')
                             ->required()
-                            ->directory('izin')
+                            ->preserveFilenames()
+                            ->directory('izin/standar_operasional')
                             ->label('File Berkas')
                             ->acceptedFileTypes([
                                 'application/pdf',

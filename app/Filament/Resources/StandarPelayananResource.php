@@ -49,7 +49,8 @@ class StandarPelayananResource extends Resource
                             ->maxLength(255),
                         FileUpload::make('file')
                             ->required()
-                            ->directory('izin')
+                            ->preserveFilenames()
+                            ->directory('izin/standar_pelayanan')
                             ->label('File Berkas')
                             ->acceptedFileTypes([
                                 'application/pdf',
