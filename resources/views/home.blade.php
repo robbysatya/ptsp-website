@@ -185,12 +185,12 @@
 
             @foreach ($posts as $post)
               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                <img src="{{ asset('storage/' . $post->thumbnail) }}" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                    <h4>{{ $post->title }}</h4>
-                    <p>{{ $post->title }}</p>
-                    <a href="{{ asset('storage/' . $post->thumbnail) }}" title="{{ $post->title }}" data-description="{{ $post->content }}" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="{{ route('view', $post) }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <img src="{{ asset('storage/' . $post->thumbnail) }}" class="img-fluid" alt="" style="height: 250px; width: 500px">
+                <div class="portfolio-info text-center">
+                    <h3><a href="{{ route('view', $post) }}">{{ $post->title }}</a></h3>
+                    <div>{{ $post->title }}</div>
+    {{--                    <a href="{{ asset('storage/' . $post->thumbnail) }}" title="{{ $post->title }}" data-description="{{ $post->content }}" data-gallery="portfolio-gallery-app" class="glightbox preview-link" style="height: 250px; width: 500px"><i class="bi bi-zoom-in"></i></a>--}}
+    {{--                    <a href="{{ route('view', $post) }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>--}}
                   </div>
                 </div>
               @endforeach
@@ -238,8 +238,9 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
               <div class="pic text-center"><img src="{{ asset('assets/img/team/kadis_ptsp.png') }}" style="height: 400px" class="img-fluid img-thumbnail" alt="Kepala Dinas PMPTSP Kota Metro"></div>
-              <div class="member-info">
-                <h4>Ismet, S.E</h4>
+              <div class="member-info text-center">
+                <h3 style="font-weight: 700; margin-bottom: 10px;font-size: 16px;position: relative;padding-bottom: 10px;">Ismet, S.E</h3>
+                  <hr>
                 <span>Kepala Dinas PTSP Kota Metro</span>
               </div>
             </div>
@@ -248,8 +249,9 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="pic text-center"><img src="{{ asset('assets/img/team/sekretaris_ptsp.png') }}" style="height: 400px" class="img-fluid img-thumbnail" alt="Sekretaris DPMPTSP Kota Metro"></div>
-              <div class="member-info">
-                <h4>Kori Aulina, S.IP</h4>
+              <div class="member-info text-center">
+                <h3 style="font-weight: 700; margin-bottom: 10px;font-size: 16px;position: relative;padding-bottom: 10px;">Kori Aulina, S.IP</h3>
+                  <hr>
                 <span>Sekretaris Dinas PTSP Kota Metro</span>
               </div>
             </div>

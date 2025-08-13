@@ -20,8 +20,9 @@
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="member">
                         <div class="pic text-center"><img src="{{ asset('assets/img/team/kadis_ptsp.png') }}" style="height: 400px" class="img-fluid img-thumbnail" alt="Kepala Dinas PMPTSP Kota Metro"></div>
-                        <div class="member-info">
-                            <h4>Ismet, S.E</h4>
+                        <div class="member-info text-center">
+                            <h3 style="font-weight: 700; margin-bottom: 10px;font-size: 16px;position: relative;padding-bottom: 10px;">Ismet, S.E</h3>
+                            <hr>
                             <span>Kepala Dinas PTSP Kota Metro</span>
                         </div>
                     </div>
@@ -30,8 +31,9 @@
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="member">
                         <div class="pic text-center"><img src="{{ asset('assets/img/team/sekretaris_ptsp.png') }}" style="height: 400px" class="img-fluid img-thumbnail" alt="Sekretaris DPMPTSP Kota Metro"></div>
-                        <div class="member-info">
-                            <h4>Kori Aulina, S.IP</h4>
+                        <div class="member-info text-center">
+                            <h3 style="font-weight: 700; margin-bottom: 10px;font-size: 16px;position: relative;padding-bottom: 10px;">Kori Aulina, S.IP</h3>
+                            <hr>
                             <span>Sekretaris Dinas PTSP Kota Metro</span>
                         </div>
                     </div>

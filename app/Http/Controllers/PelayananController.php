@@ -44,8 +44,8 @@ class PelayananController extends Controller
     public function standar_pelayanan()
     {
         $standar_pelayanan = StandarPelayanan::query()
-            ->orderBy('id', 'desc')
-            ->paginate(10);
+            ->orderBy('id', 'asc')
+            ->paginate(100);
 
         return view('pages.pelayanan.informasi perizinan.standar_pelayanan', [
             'title' => 'Standar Pelayanan',
@@ -56,8 +56,8 @@ class PelayananController extends Controller
     public function sop()
     {
         $sop = Sop::query()
-            ->orderBy('id', 'desc')
-            ->paginate(5);
+            ->orderBy('id', 'asc')
+            ->paginate(100);
 
         return view('pages.pelayanan.informasi perizinan.standar_operasional_pelayanan', [
             'title' => 'Standar Operasional',
